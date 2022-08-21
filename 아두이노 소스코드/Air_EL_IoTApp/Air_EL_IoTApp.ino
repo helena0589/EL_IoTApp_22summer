@@ -84,18 +84,18 @@ void loop() {
  }
 
  //가습기 자동 수동
- if(inputString=="auto_on"){
+ if(inputString=="자동"){
   a+=1;
  }
- else if(inputString=="auto_off"){
+ else if(inputString=="수동"){
   a+=1;
  }
  
  //가습기 모듈 on/off
- if (inputString=="h_on"){
+ if (inputString=="on"){
   b+=1;
  }
- else if(inputString=="h_off"){
+ else if(inputString=="off"){
   b+=1;
  }
   
