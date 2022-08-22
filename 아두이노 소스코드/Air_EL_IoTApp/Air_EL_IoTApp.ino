@@ -71,8 +71,8 @@ void setup() {
   pinMode(btn_off,INPUT); //아두이노에 내장된 저항을 이용해서 버튼을 활용하겠다!
   pinMode(btn, INPUT);
   pinMode(led, OUTPUT);
-  int a=0;
-  int b=0;
+  int a=1;
+  int b=1;
 }
 
 void loop() {
@@ -129,7 +129,7 @@ void loop() {
      if(digitalRead(btn_off) == HIGH){
         b+=1;
      }
-    if(b%2==0){
+    if(b%2!=0){
       digitalWrite(mosfet,HIGH);
       Serial.println("가습기 켬");
     }
